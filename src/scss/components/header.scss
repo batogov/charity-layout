@@ -1,0 +1,41 @@
+.header {
+    &__wrapper {
+        @include container($container-width);
+        padding: 45px 0;
+
+        &::after {
+            @include clearfix();
+        }
+    }
+
+    &__logo {
+        float: left;
+
+        span {
+            @include font(14px, $regular, #fff);
+            text-transform: uppercase;
+        }
+    }
+
+    &__menu-list {
+        float: right;
+        padding: 0;
+        margin: 0;
+
+        font-size: 0;
+    }
+
+    &__menu-item {
+        display: inline-block;
+
+        &:not(:last-of-type) {
+            margin-right: 30px;
+        }
+
+        a {
+            @include font(14px, $regular, #fff);
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+    }
+}

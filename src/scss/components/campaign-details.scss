@@ -1,0 +1,21 @@
+.campaign-details {
+    padding-top: 10px;
+
+    font-size: 0;
+
+    &__block {
+        display: inline-block;
+
+        &:not(:last-of-type) {
+            margin-right: 25px;
+        }
+    }
+
+    &__number {
+        @include font(14px, $semi-bold, #150c31);
+    }
+
+    &__legend {
+        @include font(12px, $semi-bold, #807996);
+    }
+}

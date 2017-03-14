@@ -1,0 +1,78 @@
+.help {
+    &__wrapper {
+        @include container($container-width);
+        padding: 80px 0;
+    }
+
+    &__description {
+        padding: 0 180px 80px 180px;
+
+        text-align: center;
+
+        & > h2 {
+            margin: 0;
+            padding-bottom: 30px;
+
+            @include font(28px, $regular, #150c31);
+        }
+
+        & > p {
+            margin: 0;
+
+            @include font(14px, $regular, #807996, 20px);
+        }
+    }
+
+    &__items {
+        font-size: 0;
+    }
+
+    &__item {
+        display: inline-block;
+        width: 500px;
+
+        &:nth-of-type(odd) {
+            margin-right: 140px;
+        }
+        margin-bottom: 60px;
+    }
+
+    &__item-img {
+        float: left;
+        height: 80px;
+        width: 80px;
+        margin-right: 20px;
+
+        border: 2px solid #ece8f1;
+        border-radius: 50%;
+
+        &--first {
+            background: url("../img/help-items/1.png") no-repeat 50% 50%;
+        }
+
+        &--second {
+            background: url("../img/help-items/2.png") no-repeat 50% 50%;
+        }
+
+        &--third {
+            background: url("../img/help-items/3.png") no-repeat 50% 50%;
+        }
+
+        &--fourth {
+            background: url("../img/help-items/4.png") no-repeat 50% 50%;
+        }
+    }
+
+    &__item-desc {
+        padding-left: 100px;
+
+        & > span {
+            @include font(18px, $regular, #150c31);
+        }
+
+        & > p {
+            @include font(14px, $regular, #807996, 20px);
+        }
+    }
+
+}

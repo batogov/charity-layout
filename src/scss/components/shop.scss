@@ -1,0 +1,47 @@
+.shop {
+    background-color: #f3f3f3;
+
+    &__wrapper {
+        @include container($container-width);
+        padding: 120px 0;
+
+        background: url("../img/shop-img.png") no-repeat 60px -40px;
+
+        &::after {
+            @include clearfix();
+        }
+    }
+
+    &__content {
+        width: 585px;
+        float: right;
+
+        h2 {
+            margin: 0;
+            padding-bottom: 30px;
+
+            @include font(28px, $regular, #150c31);
+        }
+
+        p {
+            margin: 0;
+
+            @include font(14px, $regular, #807996, 22px);
+        }
+    }
+
+    &__btn {
+        display: inline-block;
+        padding: 0 60px;
+        margin-top: 30px;
+        height: 50px;
+
+        @include font(12px, $semi-bold, #fff);
+        text-decoration: none;
+        text-transform: uppercase;
+        line-height: 50px;
+
+        border-radius: 25px;
+        background-color: #150c31;
+    }
+}

@@ -1,0 +1,30 @@
+.story {
+    background: url("../img/story-bg.jpg");
+
+    &__wrapper {
+        @include container($container-width);
+        padding: 160px 0;
+
+        &::after {
+            @include clearfix();
+        }
+    }
+
+    &__content {
+        width: 585px;
+        float: right;
+
+        h2 {
+            margin: 0;
+            padding-bottom: 30px;
+
+            @include font(28px, $regular, #fff);
+        }
+
+        p {
+            margin: 0;
+
+            @include font(14px, $regular, #fff, 22px);
+        }
+    }
+}

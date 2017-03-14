@@ -1,0 +1,102 @@
+.campaign-column {
+    width: 270px;
+    float: left;
+
+    &:not(:last-of-type) {
+        margin-right: 30px;
+    }
+
+    img {
+        margin-bottom: 30px;
+    }
+
+    &__desc {
+        padding: 0 10px;
+    }
+
+    &__title {
+        display: block;
+        margin: 0;
+        padding-bottom: 20px;
+
+        @include font(16px, $semi-bold, #150c31);
+    }
+
+    p {
+        margin: 0;
+        padding-bottom: 20px;
+
+        @include font(12px, $regular, #807996);
+    }
+
+    &__location {
+        position: relative;
+
+        display: block;
+        padding-left: 15px;
+        padding-bottom: 10px;
+
+        @include font(12px, $semi-bold, #150c31);
+
+        &::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            display: block;
+            width: 10px;
+            height: 16px;
+
+            background: url("../img/location-icon.png") no-repeat 0 0;
+
+            content: "";
+        }
+    }
+
+    &__bar {
+        position: relative;
+
+        display: block;
+        height: 6px;
+
+        background-color: #dad8df;
+
+        &::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            display: block;
+            height: 6px;
+
+            background-color: #32be60;
+
+            content: "";
+        }
+
+        &--first {
+            &::before {
+                width: 40%;
+            }
+        }
+
+        &--second {
+            &::before {
+                width: 76%;
+            }
+        }
+
+        &--third {
+            &::before {
+                width: 6%;
+            }
+        }
+
+        &--fourth {
+            &::before {
+                width: 100%;
+            }
+        }
+    }
+
+}
