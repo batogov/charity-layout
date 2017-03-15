@@ -1,4 +1,5 @@
 .footer {
+
     background-color: #202020;
     
     &__wrapper {
@@ -21,11 +22,12 @@
     }
 
     &__menu-list {
-        list-style: none;
         margin: 0;
         padding: 0;
 
         font-size: 0;
+
+        list-style: none;
     }
 
     &__menu-item {
@@ -38,9 +40,8 @@
         & > a {
             @include font(12px, $regular, #fff);
             text-decoration: none;
-
             line-height: 80px;
-
         }
     }
+
 }

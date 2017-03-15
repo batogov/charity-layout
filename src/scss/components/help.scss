@@ -1,4 +1,5 @@
 .help {
+
     &__wrapper {
         @include container($container-width);
         padding: 80px 0;
@@ -29,12 +30,12 @@
 
     &__item {
         display: inline-block;
+        margin-bottom: 60px;
         width: 500px;
 
         &:nth-of-type(odd) {
             margin-right: 140px;
         }
-        margin-bottom: 60px;
     }
 
     &__item-img {

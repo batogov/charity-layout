@@ -1,4 +1,5 @@
 .advantages {
+
     &__wrapper {
         @include container($container-width);
         padding-bottom: 80px;
@@ -17,11 +18,11 @@
         }
 
         p {
-            @include font(12px, $regular, #fff);
-            line-height: 20px;
-
             padding-top: 15px;
             margin: 0;
+
+            @include font(12px, $regular, #fff);
+            line-height: 20px;
 
             opacity: 0.6;
         }
@@ -31,4 +32,5 @@
     &__title {
         @include font(14px, $regular, #fff);
     }
+
 }

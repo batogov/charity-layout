@@ -1,4 +1,5 @@
 .story {
+
     background: url("../img/story-bg.jpg");
 
     &__wrapper {
@@ -27,4 +28,5 @@
             @include font(14px, $regular, #fff, 22px);
         }
     }
+
 }
