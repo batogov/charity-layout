@@ -6,7 +6,7 @@ body {
   font-family: "Montserrat", sans-serif; }
 
 header {
-  background: url("../img/header-bg.jpg") no-repeat; }
+  background: url("../img/header-bg.jpg") no-repeat 50% 50%; }
 
 .header__wrapper {
   width: 1170px;
@@ -100,13 +100,13 @@ header {
   .advantages__column:not(:last-of-type) {
     margin-right: 105px; }
   .advantages__column p {
+    padding-top: 15px;
+    margin: 0;
     font-size: 12px;
     font-weight: 400;
     color: #fff;
     line-height: normal;
     line-height: 20px;
-    padding-top: 15px;
-    margin: 0;
     opacity: 0.6; }
 
 .advantages__title {
@@ -164,8 +164,8 @@ header {
   background-color: transparent; }
 
 .campaign-column {
-  width: 270px;
-  float: left; }
+  float: left;
+  width: 270px; }
   .campaign-column:not(:last-of-type) {
     margin-right: 30px; }
   .campaign-column img {
@@ -246,7 +246,7 @@ header {
     line-height: normal; }
 
 .story {
-  background: url("../img/story-bg.jpg"); }
+  background: url("../img/story-bg.jpg") no-repeat 50% 50%; }
   .story__wrapper {
     width: 1170px;
     margin-left: auto;
@@ -303,8 +303,8 @@ header {
 
 .help__item {
   display: inline-block;
-  width: 500px;
-  margin-bottom: 60px; }
+  margin-bottom: 60px;
+  width: 500px; }
   .help__item:nth-of-type(odd) {
     margin-right: 140px; }
 
@@ -413,25 +413,25 @@ header {
   width: 234px;
   text-align: center; }
   .donors__item > img {
+    display: inline-block;
+    margin-bottom: 15px;
     width: 80px;
     height: 80px;
-    border-radius: 40px;
-    display: inline-block;
-    margin-bottom: 15px; }
+    border-radius: 40px; }
 
 .donors__money-label {
+  display: block;
   font-size: 14px;
   font-weight: 600;
   color: #150c31;
-  line-height: normal;
-  display: block; }
+  line-height: normal; }
 
 .donors__name-label {
+  display: block;
   font-size: 12px;
   font-weight: 600;
   color: #807996;
-  line-height: normal;
-  display: block; }
+  line-height: normal; }
 
 .footer {
   background-color: #202020; }
@@ -454,10 +454,10 @@ header {
   .footer__menu {
     float: right; }
   .footer__menu-list {
-    list-style: none;
     margin: 0;
     padding: 0;
-    font-size: 0; }
+    font-size: 0;
+    list-style: none; }
   .footer__menu-item {
     display: inline-block; }
     .footer__menu-item:not(:last-of-type) {

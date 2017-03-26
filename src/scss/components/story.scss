@@ -1,6 +1,6 @@
 .story {
 
-    background: url("../img/story-bg.jpg");
+    background: url("../img/story-bg.jpg") no-repeat 50% 50%;
 
     &__wrapper {
         @include container($container-width);
