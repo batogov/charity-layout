@@ -1,6 +1,6 @@
-# Лендинг "Charity"
+# Landing page "Charity"
 
-**Тип макета:** фиксированный<br>
-**Автор макета:** [Rafael Ramaisen](https://dribbble.com/ramaisen)
+**Layout:** fixed<br>
+**Author:** [Rafael Ramaisen](https://dribbble.com/ramaisen)
 
-![alt text](https://github.com/batogov/charity-layout/blob/master/screenshots/screenshot-1.jpg "Внешний вид")
+![alt text](https://github.com/batogov/charity-layout/blob/master/screenshots/screenshot-1.jpg "Screenshot")
